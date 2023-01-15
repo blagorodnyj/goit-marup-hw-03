@@ -1,0 +1,259 @@
+
+/*
+Colors
+1) Primary Brend #4D5AE5;
+2) Pressed state #404BBF;
+3) Dark #2E2F42;
+4) Success #31D0AA;
+5) Text #434455;
+6) Subtle text #8E8F99;
+7) Accent: #E7E9FC;
+8) Light #F4F4FD;
+9) Modal overlay #2E2F42;
+10) Hero background #2E2F42;
+*/
+
+
+:root {
+    --primary-brend: #4D5AE5;
+    --pressed-state: #404BBF;
+    --dark: #2E2F42;
+    --success: #31D0AA;
+    --text: #434455;
+    --subtle text: #8E8F99;
+    --accent: #E7E9FC;
+    --light: #F4F4FD;
+    --white: #FFFFFF;
+}
+
+
+body {
+background-color: var(--white);
+color: var(--text);
+font-family: Roboto, sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+text-decoration: none;
+}
+
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+white-space: nowrap;
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+color: var(--text);
+}
+
+.accent {
+    color: var(--primary-brend);
+}
+
+.logo-dark {
+color:var(--dark);
+font-family: Raleway;
+font-size: 18px;
+font-weight: 800;
+line-height: 1,33;
+letter-spacing: 0.03;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.logo-dark:hover,
+.logo-dark:focus {
+color: var(--pressed-state);
+}
+
+.logo-light {
+color:var(--light);
+font-family: Raleway;
+font-size: 18px;
+font-weight: 800;
+line-height: 1,33;
+letter-spacing: 0.03;
+text-decoration: none;
+text-transform: uppercase
+}
+
+.logo-light:hover,
+.logo-light:focus {
+    color: var(--pressed-state)
+}
+
+/* site-nav */
+.site-nav .link {
+color: var(--dark);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+}
+
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+color: var(--pressed-state);
+}
+
+.site-nav .link.current {
+color: var(--primary-brend);
+}
+
+.address .link {
+color: var(--dark);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+}
+
+/* hero */
+.hero-index {
+background-color: var(--dark);
+}
+
+.portfolio {
+background-color: var(--white);
+}
+
+
+.hero-index-title {
+font-style: inherit;
+
+/* Header 1 */
+
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+/* or 107% */
+
+text-align: center;
+letter-spacing: 0.2;
+
+color: var(--white);
+
+}
+
+/* section */
+
+.section-title {
+color: var(--text);
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.2;
+text-transform: capitalize;
+}
+
+.title {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.2;
+color:var(--text);
+}
+
+/* footer */
+.footer {
+background-color:var(--dark);
+color:var(--accent);
+}
+
+/* features */
+.feature-list .title {
+color:var(--text);
+}
+
+
+/* Button */
+.button {
+color: var(--white);
+text-decoration: none;
+background: var(--primary-brend);
+border: 1px solid var(--primary-brend);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04;
+}
+
+.button:hover,
+.button:focus {
+background-color: var(--pressed-state);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter-btn {
+box-sizing: border-box;
+color: var(--primary-brend);
+text-decoration: none;
+background: var(--light);
+border: 1px solid var(--accent);
+border-radius: 4px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.04;
+}
+
+
+.filter-btn:hover,
+.filter-btn:focus {
+color: var(--white);
+background-color: var(--pressed-state);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+/* paragraph */
+
+.text {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.2;
+}
+
+.portfolio-text {
+color: var(--text);
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.2;
+}
+
+.portfolio-text:hover {
+color: var(--text);
+}
