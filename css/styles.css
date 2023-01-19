@@ -13,6 +13,15 @@ Colors
 10) Hero background #2E2F42;
 */
 
+html {
+    box-sizing:border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
 :root {
     --primary-brend: #4D5AE5;
@@ -27,14 +36,17 @@ Colors
 }
 
 
-body {
+.body {
+margin: 0;
 background-color: var(--white);
 color: var(--text);
 font-family: Roboto, sans-serif;
 }
 
 .list {
-    list-style: none;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .link {
@@ -67,8 +79,21 @@ color: var(--text);
     color: var(--primary-brend);
 }
 
+.container {
+padding-left: 12px;
+padding-right: 12px;
+margin-left: auto;
+margin-right: auto;
+width: 1158px;
+outline: 2px solid tomato;
+}
+
 .logo-dark {
+margin-top: 24px;
+margin-bottom: 24px;
+
 color:var(--dark);
+
 font-family: Raleway;
 font-size: 18px;
 font-weight: 800;
@@ -84,7 +109,14 @@ color: var(--pressed-state);
 }
 
 .logo-light {
+
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 16px;
+margin-left: 0px;
+
 color:var(--light);
+
 font-family: Raleway;
 font-size: 18px;
 font-weight: 800;
@@ -96,12 +128,15 @@ text-transform: uppercase
 
 .logo-light:hover,
 .logo-light:focus {
-    color: var(--pressed-state)
+color: var(--pressed-state)
 }
 
 /* site-nav */
 .site-nav .link {
+
+
 color: var(--dark);
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -133,6 +168,7 @@ text-decoration: none;
 /* hero */
 .hero-index {
 background-color: var(--dark);
+text-align: center;
 }
 
 .portfolio {
@@ -141,27 +177,48 @@ background-color: var(--white);
 
 
 .hero-index-title {
+margin-top: 0;
+margin-bottom: 48;
+
+color: var(--white);
+
 font-style: inherit;
-
-/* Header 1 */
-
 font-family: 'Roboto';
 font-weight: 700;
 font-size: 56px;
 line-height: 1.07;
-/* or 107% */
-
-text-align: center;
 letter-spacing: 0.2;
-
-color: var(--white);
-
+outline: 2px solid tomato;
 }
 
 /* section */
 
+.section.nav {
+padding-top: 0px;
+padding-bottom: 0px;
+margin-bottom: 310px;
+}
+
+.section {
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: 120px;
+margin-bottom: 0px;
+}
+
+.section.no-padding {
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
 .section-title {
+margin-top: 0;
+margin-bottom: 72px;
+padding: 0px;
 color: var(--text);
+
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -170,9 +227,17 @@ line-height: 1.11;
 text-align: center;
 letter-spacing: 0.2;
 text-transform: capitalize;
+outline: 2 px solid tomato;
+}
+
+.section-title.centered {
+text-align: center;
 }
 
 .title {
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 8px;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -184,23 +249,36 @@ color:var(--text);
 
 /* footer */
 .footer {
+
+padding-top: 100px;
+padding-bottom: 100px;
+
 background-color:var(--dark);
 color:var(--accent);
 }
 
 /* features */
 .feature-list .title {
+margin-top: 0px;
+margin-bottom: 8px;
 color:var(--text);
 }
 
 
 /* Button */
 .button {
-color: var(--white);
-text-decoration: none;
-background: var(--primary-brend);
-border: 1px solid var(--primary-brend);
+display: inline-block;
 border-radius: 4px;
+padding: 16px 32px;
+min-width: 169px;
+height: 56px;
+text-align: center;
+
+color: var(--white);
+background: var(--primary-brend);
+border: 1px solid transparent;
+
+text-decoration: none;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -216,12 +294,17 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .filter-btn {
+display: inline-block;
 box-sizing: border-box;
+border-radius: 4px;
+padding: 12px 24px;
+text-align: center;
+
 color: var(--primary-brend);
-text-decoration: none;
 background: var(--light);
 border: 1px solid var(--accent);
-border-radius: 4px;
+
+text-decoration: none;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -240,10 +323,31 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /* paragraph */
 
 .text {
+margin-top: 0;
+margin-bottom: 120px;
+
 font-weight: 400;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.2;
+outline 2px solid tomato;
+}
+
+.team-text {
+padding: 0px;
+margin-bottom: 32px;
+}
+
+.feature-text {
+padding: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+.footer-text {
+width: 256px;
+margin: 0px;
+padding: 0px;
 }
 
 .portfolio-text {
@@ -257,3 +361,10 @@ letter-spacing: 0.2;
 .portfolio-text:hover {
 color: var(--text);
 }
+
+/*
+Fuckup check
+.box{
+outline: 2px solid tomato;
+}
+*/
