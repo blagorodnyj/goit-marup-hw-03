@@ -346,7 +346,6 @@ margin-top: 72px;
 .filter-list {
 display: flex;
 flex-wrap: wrap;
-background-color: teal;
 }
 
 .filter-list .item.item {
