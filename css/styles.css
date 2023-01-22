@@ -91,6 +91,7 @@ outline: 2px solid tomato;
 .logo-dark {
 margin-top: 24px;
 margin-bottom: 24px;
+margin-right: 76px;
 
 color:var(--dark);
 
@@ -132,8 +133,27 @@ color: var(--pressed-state)
 }
 
 /* site-nav */
-.site-nav .link {
+.site-nav {
+display: flex;
+}
 
+.site-nav .item + .item {
+margin-left: 40px;
+}
+
+.site-nav .item:not(:last-child) {
+margin-right: 40px;
+}
+
+.main-nav {
+display: flex;
+align-items: center;
+}
+
+.site-nav .link {
+display: block;
+padding-top: 24px;
+padding-bottom: 24px;
 
 color: var(--dark);
 
@@ -165,6 +185,11 @@ line-height: 1.5;
 text-decoration: none;
 }
 
+.address {
+display: flex;
+margin-left: auto;
+}
+
 /* hero */
 .hero-index {
 background-color: var(--dark);
@@ -175,10 +200,8 @@ text-align: center;
 background-color: var(--white);
 }
 
-
 .hero-index-title {
-margin-top: 0;
-margin-bottom: 48;
+margin-bottom: 48px;
 
 color: var(--white);
 
@@ -209,7 +232,7 @@ margin-bottom: 0px;
 .section.no-padding {
 padding-top: 0px;
 padding-bottom: 0px;
-margin-top: 0px;
+margin-top: 120px;
 margin-bottom: 0px;
 }
 
@@ -262,6 +285,79 @@ color:var(--accent);
 margin-top: 0px;
 margin-bottom: 8px;
 color:var(--text);
+}
+
+.feature-list {
+display:flex;
+flex-wrap: nowrap;
+}
+
+.feature-list .item {
+width: 300px;
+}
+
+.feature-list .item:not(:last-child){
+margin-right: 24px;
+}
+
+.feature-container {
+margin-bottom: 120px;
+}
+
+/* Doing*/
+
+.doing-list {
+display:flex;
+justify-content: center;
+}
+
+.doing-list .item:not(:last-child) {
+margin-right: 24px;
+}
+
+.team-list {
+display: flex;
+justify-content: center;
+}
+
+.team-list .item:not(:last-child){
+margin-right: 24px;
+}
+
+.team-list > .item > .title,
+.team-list > .item > .text {
+text-align: center;
+}
+
+/* filter btns */
+.button-list {
+display:flex;
+justify-content: center;
+}
+
+.button-list .item:not(:last-child) {
+margin-right: 24px;
+}
+
+.filter-list {
+margin-top: 72px;
+}
+
+.filter-list {
+display: flex;
+flex-wrap: wrap;
+background-color: teal;
+}
+
+.filter-list .item.item {
+margin-right: 24px;
+margin-bottom: 48px;
+padding-right: 0px;
+padding-left: 0px;
+}
+
+.filter-list .item:nth-child(3n) {
+margin-right: 0px;
 }
 
 
@@ -346,7 +442,8 @@ margin-bottom: 0px;
 
 .footer-text {
 width: 256px;
-margin: 0px;
+margin-top: 16px;
+margin-bottom: 0px;
 padding: 0px;
 }
 
