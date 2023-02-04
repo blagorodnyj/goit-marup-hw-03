@@ -87,6 +87,14 @@ color: var(--text);
     width: 1158px;
 }
 
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
 /* Page-header */
 .page-header {
     border-bottom: 1px solid var(--accent);
